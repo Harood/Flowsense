@@ -1,0 +1,32 @@
+{
+  "bathroom1_L": {
+    "mae": 6.26,
+    "mape": 4.25,
+    "rmse": 8.63
+  },
+  "bathroom2_L": {
+    "mae": 5.03,
+    "mape": 4.48,
+    "rmse": 6.68
+  },
+  "laundry_L": {
+    "mae": 8.17,
+    "mape": 8.11,
+    "rmse": 9.26
+  },
+  "kitchen_L": {
+    "mae": 3.8,
+    "mape": 4.42,
+    "rmse": 4.44
+  },
+  "garden_L": {
+    "mae": 2.71,
+    "mape": 9.3,
+    "rmse": 3.0
+  },
+  "total_L": {
+    "mae": 16.27,
+    "mape": 3.5,
+    "rmse": 18.11
+  }
+}

@@ -1,0 +1,1991 @@
+{
+  "meta": {
+    "rate_per_litre_rs": 0.5,
+    "source": "KWSB 2024 residential rate"
+  },
+  "today_date": "2026-03-31",
+  "today_total_L": 440.8,
+  "month_total_L": 14592.1,
+  "daily_avg_L": 469.9,
+  "daily_cost_rs": 234.9,
+  "est_bill_rs": 7036,
+  "active_sensors": 5,
+  "sensor_cards": [
+    {
+      "name": "Master Bathroom",
+      "color": "#3B82F6",
+      "today_L": 136.6,
+      "pct_of_total": 31.0,
+      "sparkline": [
+        136.2,
+        134.7,
+        141.4,
+        186.0,
+        161.7,
+        138.9,
+        136.6
+      ],
+      "status": "normal"
+    },
+    {
+      "name": "Laundry",
+      "color": "#EC4899",
+      "today_L": 97.6,
+      "pct_of_total": 22.1,
+      "sparkline": [
+        95.4,
+        88.1,
+        88.3,
+        116.9,
+        108.1,
+        97.5,
+        97.6
+      ],
+      "status": "normal"
+    },
+    {
+      "name": "Common Bathroom",
+      "color": "#8B5CF6",
+      "today_L": 98.5,
+      "pct_of_total": 22.3,
+      "sparkline": [
+        102.5,
+        103.5,
+        103.6,
+        124.5,
+        123.9,
+        101.6,
+        98.5
+      ],
+      "status": "normal"
+    },
+    {
+      "name": "Kitchen",
+      "color": "#F59E0B",
+      "today_L": 79.6,
+      "pct_of_total": 18.1,
+      "sparkline": [
+        80.2,
+        80.1,
+        78.9,
+        99.3,
+        92.0,
+        78.6,
+        79.6
+      ],
+      "status": "normal"
+    },
+    {
+      "name": "Garden",
+      "color": "#10B981",
+      "today_L": 28.5,
+      "pct_of_total": 6.5,
+      "sparkline": [
+        26.1,
+        26.8,
+        27.9,
+        32.2,
+        34.1,
+        25.9,
+        28.5
+      ],
+      "status": "normal"
+    }
+  ],
+  "chart_last30": [
+    {
+      "date": "2026-01-01",
+      "Master Bathroom": 138.0,
+      "Laundry": 95.1,
+      "Common Bathroom": 102.6,
+      "Kitchen": 80.1,
+      "Garden": 26.8,
+      "Total": 442.6
+    },
+    {
+      "date": "2026-01-02",
+      "Master Bathroom": 139.4,
+      "Laundry": 95.1,
+      "Common Bathroom": 103.2,
+      "Kitchen": 77.5,
+      "Garden": 26.0,
+      "Total": 441.3
+    },
+    {
+      "date": "2026-01-03",
+      "Master Bathroom": 172.7,
+      "Laundry": 109.2,
+      "Common Bathroom": 124.2,
+      "Kitchen": 91.2,
+      "Garden": 32.1,
+      "Total": 529.3
+    },
+    {
+      "date": "2026-01-04",
+      "Master Bathroom": 160.8,
+      "Laundry": 111.5,
+      "Common Bathroom": 122.0,
+      "Kitchen": 97.8,
+      "Garden": 29.9,
+      "Total": 522.0
+    },
+    {
+      "date": "2026-01-05",
+      "Master Bathroom": 141.0,
+      "Laundry": 93.0,
+      "Common Bathroom": 103.6,
+      "Kitchen": 77.4,
+      "Garden": 27.7,
+      "Total": 442.7
+    },
+    {
+      "date": "2026-01-06",
+      "Master Bathroom": 140.6,
+      "Laundry": 95.3,
+      "Common Bathroom": 104.6,
+      "Kitchen": 75.3,
+      "Garden": 26.4,
+      "Total": 442.2
+    },
+    {
+      "date": "2026-01-07",
+      "Master Bathroom": 139.4,
+      "Laundry": 95.8,
+      "Common Bathroom": 102.2,
+      "Kitchen": 79.5,
+      "Garden": 28.3,
+      "Total": 445.2
+    },
+    {
+      "date": "2026-01-08",
+      "Master Bathroom": 139.3,
+      "Laundry": 95.1,
+      "Common Bathroom": 102.4,
+      "Kitchen": 79.7,
+      "Garden": 27.4,
+      "Total": 443.9
+    },
+    {
+      "date": "2026-01-09",
+      "Master Bathroom": 131.4,
+      "Laundry": 90.7,
+      "Common Bathroom": 101.9,
+      "Kitchen": 79.6,
+      "Garden": 29.6,
+      "Total": 433.3
+    },
+    {
+      "date": "2026-01-10",
+      "Master Bathroom": 169.2,
+      "Laundry": 114.1,
+      "Common Bathroom": 125.7,
+      "Kitchen": 93.7,
+      "Garden": 31.1,
+      "Total": 533.7
+    },
+    {
+      "date": "2026-01-11",
+      "Master Bathroom": 160.3,
+      "Laundry": 113.1,
+      "Common Bathroom": 124.0,
+      "Kitchen": 95.0,
+      "Garden": 32.5,
+      "Total": 525.0
+    },
+    {
+      "date": "2026-01-12",
+      "Master Bathroom": 131.2,
+      "Laundry": 95.3,
+      "Common Bathroom": 107.9,
+      "Kitchen": 79.7,
+      "Garden": 26.6,
+      "Total": 440.6
+    },
+    {
+      "date": "2026-01-13",
+      "Master Bathroom": 145.2,
+      "Laundry": 95.2,
+      "Common Bathroom": 99.7,
+      "Kitchen": 76.7,
+      "Garden": 28.7,
+      "Total": 445.5
+    },
+    {
+      "date": "2026-01-14",
+      "Master Bathroom": 227.4,
+      "Laundry": 92.6,
+      "Common Bathroom": 101.1,
+      "Kitchen": 78.0,
+      "Garden": 26.4,
+      "Total": 525.5
+    },
+    {
+      "date": "2026-01-15",
+      "Master Bathroom": 141.1,
+      "Laundry": 96.5,
+      "Common Bathroom": 101.7,
+      "Kitchen": 80.7,
+      "Garden": 27.8,
+      "Total": 447.8
+    },
+    {
+      "date": "2026-01-16",
+      "Master Bathroom": 136.6,
+      "Laundry": 93.8,
+      "Common Bathroom": 104.8,
+      "Kitchen": 77.2,
+      "Garden": 28.4,
+      "Total": 440.8
+    },
+    {
+      "date": "2026-01-17",
+      "Master Bathroom": 160.0,
+      "Laundry": 112.4,
+      "Common Bathroom": 122.4,
+      "Kitchen": 94.0,
+      "Garden": 34.6,
+      "Total": 523.3
+    },
+    {
+      "date": "2026-01-18",
+      "Master Bathroom": 168.0,
+      "Laundry": 114.7,
+      "Common Bathroom": 123.6,
+      "Kitchen": 89.9,
+      "Garden": 32.4,
+      "Total": 528.7
+    },
+    {
+      "date": "2026-01-19",
+      "Master Bathroom": 141.2,
+      "Laundry": 92.5,
+      "Common Bathroom": 104.5,
+      "Kitchen": 79.7,
+      "Garden": 25.8,
+      "Total": 443.7
+    },
+    {
+      "date": "2026-01-20",
+      "Master Bathroom": 139.2,
+      "Laundry": 94.2,
+      "Common Bathroom": 102.3,
+      "Kitchen": 77.2,
+      "Garden": 27.0,
+      "Total": 439.9
+    },
+    {
+      "date": "2026-01-21",
+      "Master Bathroom": 134.7,
+      "Laundry": 94.7,
+      "Common Bathroom": 100.4,
+      "Kitchen": 80.2,
+      "Garden": 28.5,
+      "Total": 438.5
+    },
+    {
+      "date": "2026-01-22",
+      "Master Bathroom": 142.0,
+      "Laundry": 95.9,
+      "Common Bathroom": 101.8,
+      "Kitchen": 74.3,
+      "Garden": 27.9,
+      "Total": 441.9
+    },
+    {
+      "date": "2026-01-23",
+      "Master Bathroom": 135.0,
+      "Laundry": 93.2,
+      "Common Bathroom": 104.1,
+      "Kitchen": 78.6,
+      "Garden": 28.4,
+      "Total": 439.3
+    },
+    {
+      "date": "2026-01-24",
+      "Master Bathroom": 155.8,
+      "Laundry": 113.1,
+      "Common Bathroom": 121.8,
+      "Kitchen": 93.7,
+      "Garden": 29.5,
+      "Total": 513.9
+    },
+    {
+      "date": "2026-01-25",
+      "Master Bathroom": 164.6,
+      "Laundry": 114.9,
+      "Common Bathroom": 122.5,
+      "Kitchen": 97.2,
+      "Garden": 31.6,
+      "Total": 530.9
+    },
+    {
+      "date": "2026-01-26",
+      "Master Bathroom": 139.7,
+      "Laundry": 93.2,
+      "Common Bathroom": 102.4,
+      "Kitchen": 99.3,
+      "Garden": 27.2,
+      "Total": 461.8
+    },
+    {
+      "date": "2026-01-27",
+      "Master Bathroom": 140.8,
+      "Laundry": 94.4,
+      "Common Bathroom": 104.6,
+      "Kitchen": 80.7,
+      "Garden": 26.7,
+      "Total": 447.3
+    },
+    {
+      "date": "2026-01-28",
+      "Master Bathroom": 135.9,
+      "Laundry": 91.7,
+      "Common Bathroom": 100.7,
+      "Kitchen": 78.4,
+      "Garden": 26.8,
+      "Total": 433.5
+    },
+    {
+      "date": "2026-01-29",
+      "Master Bathroom": 132.9,
+      "Laundry": 89.9,
+      "Common Bathroom": 102.2,
+      "Kitchen": 74.9,
+      "Garden": 26.4,
+      "Total": 426.4
+    },
+    {
+      "date": "2026-01-30",
+      "Master Bathroom": 139.2,
+      "Laundry": 94.0,
+      "Common Bathroom": 100.7,
+      "Kitchen": 77.2,
+      "Garden": 26.9,
+      "Total": 437.9
+    },
+    {
+      "date": "2026-01-31",
+      "Master Bathroom": 163.9,
+      "Laundry": 108.7,
+      "Common Bathroom": 126.2,
+      "Kitchen": 95.2,
+      "Garden": 32.3,
+      "Total": 526.3
+    },
+    {
+      "date": "2026-02-01",
+      "Master Bathroom": 163.3,
+      "Laundry": 109.7,
+      "Common Bathroom": 123.9,
+      "Kitchen": 96.5,
+      "Garden": 33.9,
+      "Total": 527.3
+    },
+    {
+      "date": "2026-02-02",
+      "Master Bathroom": 133.5,
+      "Laundry": 94.8,
+      "Common Bathroom": 102.6,
+      "Kitchen": 80.0,
+      "Garden": 27.3,
+      "Total": 438.2
+    },
+    {
+      "date": "2026-02-03",
+      "Master Bathroom": 136.4,
+      "Laundry": 95.8,
+      "Common Bathroom": 98.6,
+      "Kitchen": 77.2,
+      "Garden": 26.3,
+      "Total": 434.2
+    },
+    {
+      "date": "2026-02-04",
+      "Master Bathroom": 136.2,
+      "Laundry": 94.9,
+      "Common Bathroom": 103.8,
+      "Kitchen": 76.8,
+      "Garden": 27.7,
+      "Total": 439.4
+    },
+    {
+      "date": "2026-02-05",
+      "Master Bathroom": 138.2,
+      "Laundry": 93.6,
+      "Common Bathroom": 103.8,
+      "Kitchen": 80.7,
+      "Garden": 25.1,
+      "Total": 441.4
+    },
+    {
+      "date": "2026-02-06",
+      "Master Bathroom": 128.5,
+      "Laundry": 96.3,
+      "Common Bathroom": 107.4,
+      "Kitchen": 76.8,
+      "Garden": 25.1,
+      "Total": 434.1
+    },
+    {
+      "date": "2026-02-07",
+      "Master Bathroom": 167.3,
+      "Laundry": 116.8,
+      "Common Bathroom": 117.5,
+      "Kitchen": 95.8,
+      "Garden": 31.7,
+      "Total": 529.0
+    },
+    {
+      "date": "2026-02-08",
+      "Master Bathroom": 163.7,
+      "Laundry": 109.7,
+      "Common Bathroom": 124.6,
+      "Kitchen": 93.3,
+      "Garden": 31.6,
+      "Total": 522.9
+    },
+    {
+      "date": "2026-02-09",
+      "Master Bathroom": 129.3,
+      "Laundry": 93.8,
+      "Common Bathroom": 106.3,
+      "Kitchen": 74.5,
+      "Garden": 26.8,
+      "Total": 430.8
+    },
+    {
+      "date": "2026-02-10",
+      "Master Bathroom": 132.8,
+      "Laundry": 138.0,
+      "Common Bathroom": 109.4,
+      "Kitchen": 78.2,
+      "Garden": 25.5,
+      "Total": 484.0
+    },
+    {
+      "date": "2026-02-11",
+      "Master Bathroom": 134.2,
+      "Laundry": 91.0,
+      "Common Bathroom": 100.2,
+      "Kitchen": 82.6,
+      "Garden": 27.6,
+      "Total": 435.7
+    },
+    {
+      "date": "2026-02-12",
+      "Master Bathroom": 136.2,
+      "Laundry": 93.9,
+      "Common Bathroom": 100.3,
+      "Kitchen": 76.7,
+      "Garden": 26.1,
+      "Total": 433.1
+    },
+    {
+      "date": "2026-02-13",
+      "Master Bathroom": 141.1,
+      "Laundry": 92.8,
+      "Common Bathroom": 103.3,
+      "Kitchen": 77.9,
+      "Garden": 28.2,
+      "Total": 443.4
+    },
+    {
+      "date": "2026-02-14",
+      "Master Bathroom": 163.7,
+      "Laundry": 114.2,
+      "Common Bathroom": 127.4,
+      "Kitchen": 92.1,
+      "Garden": 33.6,
+      "Total": 531.0
+    },
+    {
+      "date": "2026-02-15",
+      "Master Bathroom": 168.4,
+      "Laundry": 114.4,
+      "Common Bathroom": 126.1,
+      "Kitchen": 98.0,
+      "Garden": 31.9,
+      "Total": 538.7
+    },
+    {
+      "date": "2026-02-16",
+      "Master Bathroom": 140.5,
+      "Laundry": 91.5,
+      "Common Bathroom": 101.0,
+      "Kitchen": 78.0,
+      "Garden": 24.8,
+      "Total": 435.8
+    },
+    {
+      "date": "2026-02-17",
+      "Master Bathroom": 135.8,
+      "Laundry": 95.0,
+      "Common Bathroom": 103.2,
+      "Kitchen": 78.9,
+      "Garden": 26.4,
+      "Total": 439.3
+    },
+    {
+      "date": "2026-02-18",
+      "Master Bathroom": 137.9,
+      "Laundry": 93.9,
+      "Common Bathroom": 102.0,
+      "Kitchen": 76.9,
+      "Garden": 26.8,
+      "Total": 437.5
+    },
+    {
+      "date": "2026-02-19",
+      "Master Bathroom": 139.2,
+      "Laundry": 91.4,
+      "Common Bathroom": 105.5,
+      "Kitchen": 80.0,
+      "Garden": 27.4,
+      "Total": 443.4
+    },
+    {
+      "date": "2026-02-20",
+      "Master Bathroom": 133.3,
+      "Laundry": 94.5,
+      "Common Bathroom": 102.4,
+      "Kitchen": 78.4,
+      "Garden": 26.2,
+      "Total": 434.8
+    },
+    {
+      "date": "2026-02-21",
+      "Master Bathroom": 171.3,
+      "Laundry": 111.8,
+      "Common Bathroom": 124.9,
+      "Kitchen": 97.5,
+      "Garden": 32.2,
+      "Total": 537.6
+    },
+    {
+      "date": "2026-02-22",
+      "Master Bathroom": 168.8,
+      "Laundry": 110.2,
+      "Common Bathroom": 120.8,
+      "Kitchen": 92.2,
+      "Garden": 33.0,
+      "Total": 525.0
+    },
+    {
+      "date": "2026-02-23",
+      "Master Bathroom": 140.1,
+      "Laundry": 97.9,
+      "Common Bathroom": 106.1,
+      "Kitchen": 77.7,
+      "Garden": 26.6,
+      "Total": 448.4
+    },
+    {
+      "date": "2026-02-24",
+      "Master Bathroom": 143.2,
+      "Laundry": 92.1,
+      "Common Bathroom": 97.9,
+      "Kitchen": 81.2,
+      "Garden": 27.5,
+      "Total": 441.8
+    },
+    {
+      "date": "2026-02-25",
+      "Master Bathroom": 138.3,
+      "Laundry": 181.9,
+      "Common Bathroom": 105.5,
+      "Kitchen": 77.6,
+      "Garden": 26.4,
+      "Total": 529.7
+    },
+    {
+      "date": "2026-02-26",
+      "Master Bathroom": 140.9,
+      "Laundry": 98.3,
+      "Common Bathroom": 103.1,
+      "Kitchen": 78.7,
+      "Garden": 25.6,
+      "Total": 446.5
+    },
+    {
+      "date": "2026-02-27",
+      "Master Bathroom": 134.9,
+      "Laundry": 97.2,
+      "Common Bathroom": 107.5,
+      "Kitchen": 79.7,
+      "Garden": 24.9,
+      "Total": 444.1
+    },
+    {
+      "date": "2026-02-28",
+      "Master Bathroom": 166.9,
+      "Laundry": 114.8,
+      "Common Bathroom": 123.7,
+      "Kitchen": 95.9,
+      "Garden": 32.7,
+      "Total": 534.0
+    },
+    {
+      "date": "2026-03-01",
+      "Master Bathroom": 162.0,
+      "Laundry": 112.6,
+      "Common Bathroom": 119.4,
+      "Kitchen": 94.4,
+      "Garden": 30.7,
+      "Total": 519.2
+    },
+    {
+      "date": "2026-03-02",
+      "Master Bathroom": 138.2,
+      "Laundry": 93.8,
+      "Common Bathroom": 103.1,
+      "Kitchen": 75.8,
+      "Garden": 26.1,
+      "Total": 437.1
+    },
+    {
+      "date": "2026-03-03",
+      "Master Bathroom": 130.0,
+      "Laundry": 96.1,
+      "Common Bathroom": 101.6,
+      "Kitchen": 77.2,
+      "Garden": 27.1,
+      "Total": 431.9
+    },
+    {
+      "date": "2026-03-04",
+      "Master Bathroom": 133.3,
+      "Laundry": 91.8,
+      "Common Bathroom": 210.1,
+      "Kitchen": 79.1,
+      "Garden": 27.3,
+      "Total": 541.7
+    },
+    {
+      "date": "2026-03-05",
+      "Master Bathroom": 131.5,
+      "Laundry": 94.7,
+      "Common Bathroom": 107.9,
+      "Kitchen": 78.4,
+      "Garden": 26.6,
+      "Total": 439.0
+    },
+    {
+      "date": "2026-03-06",
+      "Master Bathroom": 134.8,
+      "Laundry": 93.7,
+      "Common Bathroom": 97.5,
+      "Kitchen": 75.7,
+      "Garden": 28.7,
+      "Total": 430.3
+    },
+    {
+      "date": "2026-03-07",
+      "Master Bathroom": 163.4,
+      "Laundry": 113.8,
+      "Common Bathroom": 120.7,
+      "Kitchen": 95.7,
+      "Garden": 33.1,
+      "Total": 526.8
+    },
+    {
+      "date": "2026-03-08",
+      "Master Bathroom": 163.4,
+      "Laundry": 115.1,
+      "Common Bathroom": 120.4,
+      "Kitchen": 93.4,
+      "Garden": 32.9,
+      "Total": 525.2
+    },
+    {
+      "date": "2026-03-09",
+      "Master Bathroom": 132.9,
+      "Laundry": 94.7,
+      "Common Bathroom": 108.1,
+      "Kitchen": 82.5,
+      "Garden": 27.6,
+      "Total": 445.8
+    },
+    {
+      "date": "2026-03-10",
+      "Master Bathroom": 140.7,
+      "Laundry": 93.6,
+      "Common Bathroom": 103.8,
+      "Kitchen": 82.2,
+      "Garden": 26.7,
+      "Total": 447.0
+    },
+    {
+      "date": "2026-03-11",
+      "Master Bathroom": 141.1,
+      "Laundry": 93.8,
+      "Common Bathroom": 103.1,
+      "Kitchen": 80.7,
+      "Garden": 26.4,
+      "Total": 445.1
+    },
+    {
+      "date": "2026-03-12",
+      "Master Bathroom": 136.1,
+      "Laundry": 95.5,
+      "Common Bathroom": 104.1,
+      "Kitchen": 77.6,
+      "Garden": 26.8,
+      "Total": 440.2
+    },
+    {
+      "date": "2026-03-13",
+      "Master Bathroom": 136.5,
+      "Laundry": 92.2,
+      "Common Bathroom": 101.5,
+      "Kitchen": 78.1,
+      "Garden": 87.5,
+      "Total": 495.7
+    },
+    {
+      "date": "2026-03-14",
+      "Master Bathroom": 168.8,
+      "Laundry": 113.8,
+      "Common Bathroom": 124.2,
+      "Kitchen": 89.9,
+      "Garden": 31.3,
+      "Total": 528.0
+    },
+    {
+      "date": "2026-03-15",
+      "Master Bathroom": 159.7,
+      "Laundry": 110.8,
+      "Common Bathroom": 123.5,
+      "Kitchen": 92.8,
+      "Garden": 32.7,
+      "Total": 519.5
+    },
+    {
+      "date": "2026-03-16",
+      "Master Bathroom": 127.1,
+      "Laundry": 94.9,
+      "Common Bathroom": 104.6,
+      "Kitchen": 80.2,
+      "Garden": 25.4,
+      "Total": 432.3
+    },
+    {
+      "date": "2026-03-17",
+      "Master Bathroom": 133.0,
+      "Laundry": 94.6,
+      "Common Bathroom": 103.9,
+      "Kitchen": 80.4,
+      "Garden": 25.7,
+      "Total": 437.7
+    },
+    {
+      "date": "2026-03-18",
+      "Master Bathroom": 140.1,
+      "Laundry": 91.2,
+      "Common Bathroom": 103.1,
+      "Kitchen": 80.7,
+      "Garden": 26.2,
+      "Total": 441.4
+    },
+    {
+      "date": "2026-03-19",
+      "Master Bathroom": 140.2,
+      "Laundry": 96.1,
+      "Common Bathroom": 98.2,
+      "Kitchen": 77.5,
+      "Garden": 26.8,
+      "Total": 438.8
+    },
+    {
+      "date": "2026-03-20",
+      "Master Bathroom": 132.0,
+      "Laundry": 92.7,
+      "Common Bathroom": 101.6,
+      "Kitchen": 80.7,
+      "Garden": 26.0,
+      "Total": 433.0
+    },
+    {
+      "date": "2026-03-21",
+      "Master Bathroom": 158.3,
+      "Laundry": 112.3,
+      "Common Bathroom": 122.4,
+      "Kitchen": 91.3,
+      "Garden": 32.7,
+      "Total": 516.9
+    },
+    {
+      "date": "2026-03-22",
+      "Master Bathroom": 166.6,
+      "Laundry": 110.9,
+      "Common Bathroom": 155.1,
+      "Kitchen": 94.0,
+      "Garden": 32.8,
+      "Total": 559.4
+    },
+    {
+      "date": "2026-03-23",
+      "Master Bathroom": 143.2,
+      "Laundry": 94.4,
+      "Common Bathroom": 100.3,
+      "Kitchen": 78.3,
+      "Garden": 26.2,
+      "Total": 442.4
+    },
+    {
+      "date": "2026-03-24",
+      "Master Bathroom": 135.8,
+      "Laundry": 96.9,
+      "Common Bathroom": 100.7,
+      "Kitchen": 79.1,
+      "Garden": 29.4,
+      "Total": 441.9
+    },
+    {
+      "date": "2026-03-25",
+      "Master Bathroom": 136.2,
+      "Laundry": 95.4,
+      "Common Bathroom": 102.5,
+      "Kitchen": 80.2,
+      "Garden": 26.1,
+      "Total": 440.5
+    },
+    {
+      "date": "2026-03-26",
+      "Master Bathroom": 134.7,
+      "Laundry": 88.1,
+      "Common Bathroom": 103.5,
+      "Kitchen": 80.1,
+      "Garden": 26.8,
+      "Total": 433.2
+    },
+    {
+      "date": "2026-03-27",
+      "Master Bathroom": 141.4,
+      "Laundry": 88.3,
+      "Common Bathroom": 103.6,
+      "Kitchen": 78.9,
+      "Garden": 27.9,
+      "Total": 440.2
+    },
+    {
+      "date": "2026-03-28",
+      "Master Bathroom": 186.0,
+      "Laundry": 116.9,
+      "Common Bathroom": 124.5,
+      "Kitchen": 99.3,
+      "Garden": 32.2,
+      "Total": 558.9
+    },
+    {
+      "date": "2026-03-29",
+      "Master Bathroom": 161.7,
+      "Laundry": 108.1,
+      "Common Bathroom": 123.9,
+      "Kitchen": 92.0,
+      "Garden": 34.1,
+      "Total": 519.8
+    },
+    {
+      "date": "2026-03-30",
+      "Master Bathroom": 138.9,
+      "Laundry": 97.5,
+      "Common Bathroom": 101.6,
+      "Kitchen": 78.6,
+      "Garden": 25.9,
+      "Total": 442.4
+    },
+    {
+      "date": "2026-03-31",
+      "Master Bathroom": 136.6,
+      "Laundry": 97.6,
+      "Common Bathroom": 98.5,
+      "Kitchen": 79.6,
+      "Garden": 28.5,
+      "Total": 440.8
+    }
+  ],
+  "heatmap": [
+    {
+      "weekday": 0,
+      "hour": 0,
+      "avg_L": 1.2
+    },
+    {
+      "weekday": 0,
+      "hour": 1,
+      "avg_L": 1.2
+    },
+    {
+      "weekday": 0,
+      "hour": 2,
+      "avg_L": 1.2
+    },
+    {
+      "weekday": 0,
+      "hour": 3,
+      "avg_L": 1.2
+    },
+    {
+      "weekday": 0,
+      "hour": 4,
+      "avg_L": 1.19
+    },
+    {
+      "weekday": 0,
+      "hour": 5,
+      "avg_L": 1.18
+    },
+    {
+      "weekday": 0,
+      "hour": 6,
+      "avg_L": 52.71
+    },
+    {
+      "weekday": 0,
+      "hour": 7,
+      "avg_L": 59.05
+    },
+    {
+      "weekday": 0,
+      "hour": 8,
+      "avg_L": 50.79
+    },
+    {
+      "weekday": 0,
+      "hour": 9,
+      "avg_L": 10.1
+    },
+    {
+      "weekday": 0,
+      "hour": 10,
+      "avg_L": 9.82
+    },
+    {
+      "weekday": 0,
+      "hour": 11,
+      "avg_L": 10.19
+    },
+    {
+      "weekday": 0,
+      "hour": 12,
+      "avg_L": 14.77
+    },
+    {
+      "weekday": 0,
+      "hour": 13,
+      "avg_L": 14.43
+    },
+    {
+      "weekday": 0,
+      "hour": 14,
+      "avg_L": 11.58
+    },
+    {
+      "weekday": 0,
+      "hour": 15,
+      "avg_L": 10.13
+    },
+    {
+      "weekday": 0,
+      "hour": 16,
+      "avg_L": 10.04
+    },
+    {
+      "weekday": 0,
+      "hour": 17,
+      "avg_L": 10.1
+    },
+    {
+      "weekday": 0,
+      "hour": 18,
+      "avg_L": 21.2
+    },
+    {
+      "weekday": 0,
+      "hour": 19,
+      "avg_L": 48.94
+    },
+    {
+      "weekday": 0,
+      "hour": 20,
+      "avg_L": 42.89
+    },
+    {
+      "weekday": 0,
+      "hour": 21,
+      "avg_L": 37.71
+    },
+    {
+      "weekday": 0,
+      "hour": 22,
+      "avg_L": 9.99
+    },
+    {
+      "weekday": 0,
+      "hour": 23,
+      "avg_L": 10.09
+    },
+    {
+      "weekday": 1,
+      "hour": 0,
+      "avg_L": 1.18
+    },
+    {
+      "weekday": 1,
+      "hour": 1,
+      "avg_L": 1.22
+    },
+    {
+      "weekday": 1,
+      "hour": 2,
+      "avg_L": 4.68
+    },
+    {
+      "weekday": 1,
+      "hour": 3,
+      "avg_L": 1.22
+    },
+    {
+      "weekday": 1,
+      "hour": 4,
+      "avg_L": 1.18
+    },
+    {
+      "weekday": 1,
+      "hour": 5,
+      "avg_L": 1.19
+    },
+    {
+      "weekday": 1,
+      "hour": 6,
+      "avg_L": 53.64
+    },
+    {
+      "weekday": 1,
+      "hour": 7,
+      "avg_L": 58.8
+    },
+    {
+      "weekday": 1,
+      "hour": 8,
+      "avg_L": 50.98
+    },
+    {
+      "weekday": 1,
+      "hour": 9,
+      "avg_L": 10.21
+    },
+    {
+      "weekday": 1,
+      "hour": 10,
+      "avg_L": 9.91
+    },
+    {
+      "weekday": 1,
+      "hour": 11,
+      "avg_L": 10.01
+    },
+    {
+      "weekday": 1,
+      "hour": 12,
+      "avg_L": 14.81
+    },
+    {
+      "weekday": 1,
+      "hour": 13,
+      "avg_L": 14.69
+    },
+    {
+      "weekday": 1,
+      "hour": 14,
+      "avg_L": 10.17
+    },
+    {
+      "weekday": 1,
+      "hour": 15,
+      "avg_L": 10.06
+    },
+    {
+      "weekday": 1,
+      "hour": 16,
+      "avg_L": 9.96
+    },
+    {
+      "weekday": 1,
+      "hour": 17,
+      "avg_L": 9.91
+    },
+    {
+      "weekday": 1,
+      "hour": 18,
+      "avg_L": 21.5
+    },
+    {
+      "weekday": 1,
+      "hour": 19,
+      "avg_L": 48.8
+    },
+    {
+      "weekday": 1,
+      "hour": 20,
+      "avg_L": 42.56
+    },
+    {
+      "weekday": 1,
+      "hour": 21,
+      "avg_L": 37.59
+    },
+    {
+      "weekday": 1,
+      "hour": 22,
+      "avg_L": 9.99
+    },
+    {
+      "weekday": 1,
+      "hour": 23,
+      "avg_L": 9.86
+    },
+    {
+      "weekday": 2,
+      "hour": 0,
+      "avg_L": 1.2
+    },
+    {
+      "weekday": 2,
+      "hour": 1,
+      "avg_L": 10.38
+    },
+    {
+      "weekday": 2,
+      "hour": 2,
+      "avg_L": 1.2
+    },
+    {
+      "weekday": 2,
+      "hour": 3,
+      "avg_L": 15.77
+    },
+    {
+      "weekday": 2,
+      "hour": 4,
+      "avg_L": 1.2
+    },
+    {
+      "weekday": 2,
+      "hour": 5,
+      "avg_L": 1.19
+    },
+    {
+      "weekday": 2,
+      "hour": 6,
+      "avg_L": 52.45
+    },
+    {
+      "weekday": 2,
+      "hour": 7,
+      "avg_L": 58.56
+    },
+    {
+      "weekday": 2,
+      "hour": 8,
+      "avg_L": 52.33
+    },
+    {
+      "weekday": 2,
+      "hour": 9,
+      "avg_L": 10.1
+    },
+    {
+      "weekday": 2,
+      "hour": 10,
+      "avg_L": 10.13
+    },
+    {
+      "weekday": 2,
+      "hour": 11,
+      "avg_L": 10.05
+    },
+    {
+      "weekday": 2,
+      "hour": 12,
+      "avg_L": 14.49
+    },
+    {
+      "weekday": 2,
+      "hour": 13,
+      "avg_L": 14.6
+    },
+    {
+      "weekday": 2,
+      "hour": 14,
+      "avg_L": 10.33
+    },
+    {
+      "weekday": 2,
+      "hour": 15,
+      "avg_L": 10.07
+    },
+    {
+      "weekday": 2,
+      "hour": 16,
+      "avg_L": 9.71
+    },
+    {
+      "weekday": 2,
+      "hour": 17,
+      "avg_L": 10.06
+    },
+    {
+      "weekday": 2,
+      "hour": 18,
+      "avg_L": 21.83
+    },
+    {
+      "weekday": 2,
+      "hour": 19,
+      "avg_L": 48.42
+    },
+    {
+      "weekday": 2,
+      "hour": 20,
+      "avg_L": 41.79
+    },
+    {
+      "weekday": 2,
+      "hour": 21,
+      "avg_L": 36.83
+    },
+    {
+      "weekday": 2,
+      "hour": 22,
+      "avg_L": 10.16
+    },
+    {
+      "weekday": 2,
+      "hour": 23,
+      "avg_L": 9.95
+    },
+    {
+      "weekday": 3,
+      "hour": 0,
+      "avg_L": 1.21
+    },
+    {
+      "weekday": 3,
+      "hour": 1,
+      "avg_L": 1.2
+    },
+    {
+      "weekday": 3,
+      "hour": 2,
+      "avg_L": 1.2
+    },
+    {
+      "weekday": 3,
+      "hour": 3,
+      "avg_L": 1.2
+    },
+    {
+      "weekday": 3,
+      "hour": 4,
+      "avg_L": 1.2
+    },
+    {
+      "weekday": 3,
+      "hour": 5,
+      "avg_L": 1.19
+    },
+    {
+      "weekday": 3,
+      "hour": 6,
+      "avg_L": 51.61
+    },
+    {
+      "weekday": 3,
+      "hour": 7,
+      "avg_L": 59.53
+    },
+    {
+      "weekday": 3,
+      "hour": 8,
+      "avg_L": 51.13
+    },
+    {
+      "weekday": 3,
+      "hour": 9,
+      "avg_L": 10.02
+    },
+    {
+      "weekday": 3,
+      "hour": 10,
+      "avg_L": 10.2
+    },
+    {
+      "weekday": 3,
+      "hour": 11,
+      "avg_L": 10.01
+    },
+    {
+      "weekday": 3,
+      "hour": 12,
+      "avg_L": 14.78
+    },
+    {
+      "weekday": 3,
+      "hour": 13,
+      "avg_L": 14.46
+    },
+    {
+      "weekday": 3,
+      "hour": 14,
+      "avg_L": 10.06
+    },
+    {
+      "weekday": 3,
+      "hour": 15,
+      "avg_L": 9.91
+    },
+    {
+      "weekday": 3,
+      "hour": 16,
+      "avg_L": 10.12
+    },
+    {
+      "weekday": 3,
+      "hour": 17,
+      "avg_L": 9.86
+    },
+    {
+      "weekday": 3,
+      "hour": 18,
+      "avg_L": 21.27
+    },
+    {
+      "weekday": 3,
+      "hour": 19,
+      "avg_L": 48.48
+    },
+    {
+      "weekday": 3,
+      "hour": 20,
+      "avg_L": 43.51
+    },
+    {
+      "weekday": 3,
+      "hour": 21,
+      "avg_L": 37.61
+    },
+    {
+      "weekday": 3,
+      "hour": 22,
+      "avg_L": 10.06
+    },
+    {
+      "weekday": 3,
+      "hour": 23,
+      "avg_L": 10.02
+    },
+    {
+      "weekday": 4,
+      "hour": 0,
+      "avg_L": 1.2
+    },
+    {
+      "weekday": 4,
+      "hour": 1,
+      "avg_L": 1.2
+    },
+    {
+      "weekday": 4,
+      "hour": 2,
+      "avg_L": 5.82
+    },
+    {
+      "weekday": 4,
+      "hour": 3,
+      "avg_L": 1.21
+    },
+    {
+      "weekday": 4,
+      "hour": 4,
+      "avg_L": 1.21
+    },
+    {
+      "weekday": 4,
+      "hour": 5,
+      "avg_L": 1.19
+    },
+    {
+      "weekday": 4,
+      "hour": 6,
+      "avg_L": 52.67
+    },
+    {
+      "weekday": 4,
+      "hour": 7,
+      "avg_L": 58.37
+    },
+    {
+      "weekday": 4,
+      "hour": 8,
+      "avg_L": 50.29
+    },
+    {
+      "weekday": 4,
+      "hour": 9,
+      "avg_L": 9.89
+    },
+    {
+      "weekday": 4,
+      "hour": 10,
+      "avg_L": 10.03
+    },
+    {
+      "weekday": 4,
+      "hour": 11,
+      "avg_L": 9.89
+    },
+    {
+      "weekday": 4,
+      "hour": 12,
+      "avg_L": 14.59
+    },
+    {
+      "weekday": 4,
+      "hour": 13,
+      "avg_L": 14.3
+    },
+    {
+      "weekday": 4,
+      "hour": 14,
+      "avg_L": 9.89
+    },
+    {
+      "weekday": 4,
+      "hour": 15,
+      "avg_L": 10.03
+    },
+    {
+      "weekday": 4,
+      "hour": 16,
+      "avg_L": 10.09
+    },
+    {
+      "weekday": 4,
+      "hour": 17,
+      "avg_L": 10.03
+    },
+    {
+      "weekday": 4,
+      "hour": 18,
+      "avg_L": 21.4
+    },
+    {
+      "weekday": 4,
+      "hour": 19,
+      "avg_L": 48.64
+    },
+    {
+      "weekday": 4,
+      "hour": 20,
+      "avg_L": 42.67
+    },
+    {
+      "weekday": 4,
+      "hour": 21,
+      "avg_L": 37.64
+    },
+    {
+      "weekday": 4,
+      "hour": 22,
+      "avg_L": 9.98
+    },
+    {
+      "weekday": 4,
+      "hour": 23,
+      "avg_L": 9.95
+    },
+    {
+      "weekday": 5,
+      "hour": 0,
+      "avg_L": 1.45
+    },
+    {
+      "weekday": 5,
+      "hour": 1,
+      "avg_L": 1.45
+    },
+    {
+      "weekday": 5,
+      "hour": 2,
+      "avg_L": 1.44
+    },
+    {
+      "weekday": 5,
+      "hour": 3,
+      "avg_L": 1.44
+    },
+    {
+      "weekday": 5,
+      "hour": 4,
+      "avg_L": 3.4
+    },
+    {
+      "weekday": 5,
+      "hour": 5,
+      "avg_L": 1.46
+    },
+    {
+      "weekday": 5,
+      "hour": 6,
+      "avg_L": 64.26
+    },
+    {
+      "weekday": 5,
+      "hour": 7,
+      "avg_L": 70.21
+    },
+    {
+      "weekday": 5,
+      "hour": 8,
+      "avg_L": 61.43
+    },
+    {
+      "weekday": 5,
+      "hour": 9,
+      "avg_L": 12.02
+    },
+    {
+      "weekday": 5,
+      "hour": 10,
+      "avg_L": 11.89
+    },
+    {
+      "weekday": 5,
+      "hour": 11,
+      "avg_L": 11.95
+    },
+    {
+      "weekday": 5,
+      "hour": 12,
+      "avg_L": 17.57
+    },
+    {
+      "weekday": 5,
+      "hour": 13,
+      "avg_L": 17.35
+    },
+    {
+      "weekday": 5,
+      "hour": 14,
+      "avg_L": 11.97
+    },
+    {
+      "weekday": 5,
+      "hour": 15,
+      "avg_L": 12.06
+    },
+    {
+      "weekday": 5,
+      "hour": 16,
+      "avg_L": 12.11
+    },
+    {
+      "weekday": 5,
+      "hour": 17,
+      "avg_L": 12.27
+    },
+    {
+      "weekday": 5,
+      "hour": 18,
+      "avg_L": 25.79
+    },
+    {
+      "weekday": 5,
+      "hour": 19,
+      "avg_L": 58.15
+    },
+    {
+      "weekday": 5,
+      "hour": 20,
+      "avg_L": 51.33
+    },
+    {
+      "weekday": 5,
+      "hour": 21,
+      "avg_L": 44.78
+    },
+    {
+      "weekday": 5,
+      "hour": 22,
+      "avg_L": 12.11
+    },
+    {
+      "weekday": 5,
+      "hour": 23,
+      "avg_L": 12.02
+    },
+    {
+      "weekday": 6,
+      "hour": 0,
+      "avg_L": 1.46
+    },
+    {
+      "weekday": 6,
+      "hour": 1,
+      "avg_L": 3.59
+    },
+    {
+      "weekday": 6,
+      "hour": 2,
+      "avg_L": 1.41
+    },
+    {
+      "weekday": 6,
+      "hour": 3,
+      "avg_L": 1.44
+    },
+    {
+      "weekday": 6,
+      "hour": 4,
+      "avg_L": 1.47
+    },
+    {
+      "weekday": 6,
+      "hour": 5,
+      "avg_L": 1.43
+    },
+    {
+      "weekday": 6,
+      "hour": 6,
+      "avg_L": 64.71
+    },
+    {
+      "weekday": 6,
+      "hour": 7,
+      "avg_L": 69.13
+    },
+    {
+      "weekday": 6,
+      "hour": 8,
+      "avg_L": 60.47
+    },
+    {
+      "weekday": 6,
+      "hour": 9,
+      "avg_L": 12.09
+    },
+    {
+      "weekday": 6,
+      "hour": 10,
+      "avg_L": 12.14
+    },
+    {
+      "weekday": 6,
+      "hour": 11,
+      "avg_L": 12.21
+    },
+    {
+      "weekday": 6,
+      "hour": 12,
+      "avg_L": 17.38
+    },
+    {
+      "weekday": 6,
+      "hour": 13,
+      "avg_L": 17.53
+    },
+    {
+      "weekday": 6,
+      "hour": 14,
+      "avg_L": 12.05
+    },
+    {
+      "weekday": 6,
+      "hour": 15,
+      "avg_L": 12.19
+    },
+    {
+      "weekday": 6,
+      "hour": 16,
+      "avg_L": 11.89
+    },
+    {
+      "weekday": 6,
+      "hour": 17,
+      "avg_L": 12.19
+    },
+    {
+      "weekday": 6,
+      "hour": 18,
+      "avg_L": 25.67
+    },
+    {
+      "weekday": 6,
+      "hour": 19,
+      "avg_L": 58.46
+    },
+    {
+      "weekday": 6,
+      "hour": 20,
+      "avg_L": 51.01
+    },
+    {
+      "weekday": 6,
+      "hour": 21,
+      "avg_L": 44.04
+    },
+    {
+      "weekday": 6,
+      "hour": 22,
+      "avg_L": 11.95
+    },
+    {
+      "weekday": 6,
+      "hour": 23,
+      "avg_L": 12.03
+    }
+  ],
+  "hourly_data": [
+    {
+      "hour": 0,
+      "time": "00:00",
+      "Master Bathroom": 0.4,
+      "Laundry": 0.26,
+      "Common Bathroom": 0.26,
+      "Kitchen": 0.22,
+      "Garden": 0.0,
+      "Total": 1.14
+    },
+    {
+      "hour": 1,
+      "time": "01:00",
+      "Master Bathroom": 0.38,
+      "Laundry": 0.28,
+      "Common Bathroom": 0.28,
+      "Kitchen": 0.23,
+      "Garden": 0.0,
+      "Total": 1.17
+    },
+    {
+      "hour": 2,
+      "time": "02:00",
+      "Master Bathroom": 0.37,
+      "Laundry": 0.3,
+      "Common Bathroom": 0.33,
+      "Kitchen": 0.23,
+      "Garden": 0.0,
+      "Total": 1.23
+    },
+    {
+      "hour": 3,
+      "time": "03:00",
+      "Master Bathroom": 0.41,
+      "Laundry": 0.27,
+      "Common Bathroom": 0.28,
+      "Kitchen": 0.23,
+      "Garden": 0.0,
+      "Total": 1.19
+    },
+    {
+      "hour": 4,
+      "time": "04:00",
+      "Master Bathroom": 0.35,
+      "Laundry": 0.25,
+      "Common Bathroom": 0.32,
+      "Kitchen": 0.21,
+      "Garden": 0.0,
+      "Total": 1.13
+    },
+    {
+      "hour": 5,
+      "time": "05:00",
+      "Master Bathroom": 0.35,
+      "Laundry": 0.3,
+      "Common Bathroom": 0.31,
+      "Kitchen": 0.24,
+      "Garden": 0.0,
+      "Total": 1.2
+    },
+    {
+      "hour": 6,
+      "time": "06:00",
+      "Master Bathroom": 19.04,
+      "Laundry": 12.43,
+      "Common Bathroom": 12.32,
+      "Kitchen": 2.46,
+      "Garden": 8.34,
+      "Total": 54.59
+    },
+    {
+      "hour": 7,
+      "time": "07:00",
+      "Master Bathroom": 18.49,
+      "Laundry": 12.0,
+      "Common Bathroom": 11.89,
+      "Kitchen": 8.79,
+      "Garden": 8.6,
+      "Total": 59.77
+    },
+    {
+      "hour": 8,
+      "time": "08:00",
+      "Master Bathroom": 15.44,
+      "Laundry": 13.2,
+      "Common Bathroom": 11.8,
+      "Kitchen": 7.29,
+      "Garden": 0.0,
+      "Total": 47.73
+    },
+    {
+      "hour": 9,
+      "time": "09:00",
+      "Master Bathroom": 3.03,
+      "Laundry": 2.46,
+      "Common Bathroom": 2.08,
+      "Kitchen": 2.26,
+      "Garden": 0.0,
+      "Total": 9.83
+    },
+    {
+      "hour": 10,
+      "time": "10:00",
+      "Master Bathroom": 3.36,
+      "Laundry": 2.09,
+      "Common Bathroom": 2.4,
+      "Kitchen": 1.99,
+      "Garden": 0.0,
+      "Total": 9.84
+    },
+    {
+      "hour": 11,
+      "time": "11:00",
+      "Master Bathroom": 3.08,
+      "Laundry": 2.12,
+      "Common Bathroom": 2.38,
+      "Kitchen": 2.12,
+      "Garden": 0.0,
+      "Total": 9.7
+    },
+    {
+      "hour": 12,
+      "time": "12:00",
+      "Master Bathroom": 3.23,
+      "Laundry": 2.45,
+      "Common Bathroom": 2.65,
+      "Kitchen": 7.67,
+      "Garden": 0.0,
+      "Total": 16.0
+    },
+    {
+      "hour": 13,
+      "time": "13:00",
+      "Master Bathroom": 3.52,
+      "Laundry": 2.34,
+      "Common Bathroom": 2.64,
+      "Kitchen": 6.87,
+      "Garden": 0.0,
+      "Total": 15.37
+    },
+    {
+      "hour": 14,
+      "time": "14:00",
+      "Master Bathroom": 3.48,
+      "Laundry": 2.32,
+      "Common Bathroom": 2.44,
+      "Kitchen": 2.21,
+      "Garden": 0.0,
+      "Total": 10.45
+    },
+    {
+      "hour": 15,
+      "time": "15:00",
+      "Master Bathroom": 2.74,
+      "Laundry": 2.11,
+      "Common Bathroom": 2.38,
+      "Kitchen": 2.36,
+      "Garden": 0.0,
+      "Total": 9.59
+    },
+    {
+      "hour": 16,
+      "time": "16:00",
+      "Master Bathroom": 2.93,
+      "Laundry": 2.24,
+      "Common Bathroom": 2.76,
+      "Kitchen": 2.55,
+      "Garden": 0.0,
+      "Total": 10.48
+    },
+    {
+      "hour": 17,
+      "time": "17:00",
+      "Master Bathroom": 2.89,
+      "Laundry": 2.36,
+      "Common Bathroom": 2.05,
+      "Kitchen": 2.21,
+      "Garden": 0.0,
+      "Total": 9.51
+    },
+    {
+      "hour": 18,
+      "time": "18:00",
+      "Master Bathroom": 2.73,
+      "Laundry": 2.07,
+      "Common Bathroom": 2.11,
+      "Kitchen": 7.35,
+      "Garden": 5.56,
+      "Total": 19.82
+    },
+    {
+      "hour": 19,
+      "time": "19:00",
+      "Master Bathroom": 16.22,
+      "Laundry": 10.22,
+      "Common Bathroom": 9.29,
+      "Kitchen": 7.13,
+      "Garden": 5.96,
+      "Total": 48.82
+    },
+    {
+      "hour": 20,
+      "time": "20:00",
+      "Master Bathroom": 12.43,
+      "Laundry": 10.48,
+      "Common Bathroom": 10.0,
+      "Kitchen": 7.94,
+      "Garden": 0.0,
+      "Total": 40.85
+    },
+    {
+      "hour": 21,
+      "time": "21:00",
+      "Master Bathroom": 15.8,
+      "Laundry": 10.98,
+      "Common Bathroom": 12.19,
+      "Kitchen": 2.59,
+      "Garden": 0.0,
+      "Total": 41.56
+    },
+    {
+      "hour": 22,
+      "time": "22:00",
+      "Master Bathroom": 3.19,
+      "Laundry": 2.18,
+      "Common Bathroom": 2.67,
+      "Kitchen": 2.42,
+      "Garden": 0.0,
+      "Total": 10.46
+    },
+    {
+      "hour": 23,
+      "time": "23:00",
+      "Master Bathroom": 2.76,
+      "Laundry": 1.89,
+      "Common Bathroom": 2.68,
+      "Kitchen": 2.02,
+      "Garden": 0.0,
+      "Total": 9.35
+    }
+  ]
+}

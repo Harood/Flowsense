@@ -1,0 +1,49 @@
+{
+  "profile": {
+    "avg_daily_total": 469.86,
+    "avg_daily_bathroom1": 146.17,
+    "avg_daily_bathroom2": 110.31,
+    "avg_daily_laundry": 100.9,
+    "avg_daily_kitchen": 83.37,
+    "avg_daily_garden": 29.12,
+    "bathroom1_pct": 31.1,
+    "bathroom2_pct": 23.5,
+    "laundry_pct": 21.5,
+    "kitchen_pct": 17.7,
+    "garden_pct": 6.2,
+    "avg_night_total": 2.09,
+    "weekday_avg": 445.87,
+    "weekend_avg": 528.93,
+    "peak_day": "2026-03-22",
+    "peak_day_usage": 559.44,
+    "highest_bathroom": "Master Bathroom"
+  },
+  "recommendations": [
+    {
+      "title": "Overall Usage Above Average",
+      "description": "Your household uses 469.86L/day on average. The national average for a 4-person household is ~400L/day.",
+      "sensor": "All Zones",
+      "impact": "High",
+      "saving_estimate_L": 69.9,
+      "priority": 1
+    },
+    {
+      "title": "Check Common Bathroom Fixtures",
+      "description": "Common Bathroom is using 23.5% of daily water. Inspect taps and showerhead for drips.",
+      "sensor": "Common Bathroom",
+      "impact": "Medium",
+      "saving_estimate_L": 13.2,
+      "priority": 2
+    },
+    {
+      "title": "Optimise Laundry Water Usage",
+      "description": "Laundry contributes 21.5% of usage. Use full loads and consider a water-efficient washing machine.",
+      "sensor": "Laundry",
+      "impact": "Medium",
+      "saving_estimate_L": 12.1,
+      "priority": 3
+    }
+  ],
+  "generated_for": "Single Household - 4 persons",
+  "data_period": "90 days (Jan-Mar 2024)"
+}

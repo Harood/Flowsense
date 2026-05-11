@@ -1,0 +1,384 @@
+{
+  "generated_on": "2026-03-31",
+  "forecast_start": "2026-04-01",
+  "forecast_end": "2026-04-30",
+  "next_7_days": [
+    {
+      "date": "2026-04-01",
+      "day": 1,
+      "bathroom1_L": 139.85,
+      "bathroom2_L": 100.03,
+      "laundry_L": 99.97,
+      "kitchen_L": 76.71,
+      "garden_L": 29.29,
+      "total_L": 422.11
+    },
+    {
+      "date": "2026-04-02",
+      "day": 2,
+      "bathroom1_L": 143.05,
+      "bathroom2_L": 106.69,
+      "laundry_L": 100.06,
+      "kitchen_L": 82.33,
+      "garden_L": 29.34,
+      "total_L": 437.93
+    },
+    {
+      "date": "2026-04-03",
+      "day": 3,
+      "bathroom1_L": 146.35,
+      "bathroom2_L": 113.72,
+      "laundry_L": 100.14,
+      "kitchen_L": 89.09,
+      "garden_L": 29.39,
+      "total_L": 476.86
+    },
+    {
+      "date": "2026-04-04",
+      "day": 4,
+      "bathroom1_L": 148.0,
+      "bathroom2_L": 115.97,
+      "laundry_L": 100.24,
+      "kitchen_L": 91.7,
+      "garden_L": 29.43,
+      "total_L": 513.22
+    },
+    {
+      "date": "2026-04-05",
+      "day": 5,
+      "bathroom1_L": 147.46,
+      "bathroom2_L": 112.39,
+      "laundry_L": 100.32,
+      "kitchen_L": 87.72,
+      "garden_L": 29.48,
+      "total_L": 503.34
+    },
+    {
+      "date": "2026-04-06",
+      "day": 6,
+      "bathroom1_L": 145.57,
+      "bathroom2_L": 106.32,
+      "laundry_L": 100.4,
+      "kitchen_L": 81.22,
+      "garden_L": 29.52,
+      "total_L": 457.85
+    },
+    {
+      "date": "2026-04-07",
+      "day": 7,
+      "bathroom1_L": 143.69,
+      "bathroom2_L": 102.23,
+      "laundry_L": 100.42,
+      "kitchen_L": 77.79,
+      "garden_L": 29.53,
+      "total_L": 430.1
+    }
+  ],
+  "next_30_days": [
+    {
+      "date": "2026-04-01",
+      "day": 1,
+      "bathroom1_L": 139.85,
+      "bathroom2_L": 100.03,
+      "laundry_L": 99.97,
+      "kitchen_L": 76.71,
+      "garden_L": 29.29,
+      "total_L": 422.11
+    },
+    {
+      "date": "2026-04-02",
+      "day": 2,
+      "bathroom1_L": 143.05,
+      "bathroom2_L": 106.69,
+      "laundry_L": 100.06,
+      "kitchen_L": 82.33,
+      "garden_L": 29.34,
+      "total_L": 437.93
+    },
+    {
+      "date": "2026-04-03",
+      "day": 3,
+      "bathroom1_L": 146.35,
+      "bathroom2_L": 113.72,
+      "laundry_L": 100.14,
+      "kitchen_L": 89.09,
+      "garden_L": 29.39,
+      "total_L": 476.86
+    },
+    {
+      "date": "2026-04-04",
+      "day": 4,
+      "bathroom1_L": 148.0,
+      "bathroom2_L": 115.97,
+      "laundry_L": 100.24,
+      "kitchen_L": 91.7,
+      "garden_L": 29.43,
+      "total_L": 513.22
+    },
+    {
+      "date": "2026-04-05",
+      "day": 5,
+      "bathroom1_L": 147.46,
+      "bathroom2_L": 112.39,
+      "laundry_L": 100.32,
+      "kitchen_L": 87.72,
+      "garden_L": 29.48,
+      "total_L": 503.34
+    },
+    {
+      "date": "2026-04-06",
+      "day": 6,
+      "bathroom1_L": 145.57,
+      "bathroom2_L": 106.32,
+      "laundry_L": 100.4,
+      "kitchen_L": 81.22,
+      "garden_L": 29.52,
+      "total_L": 457.85
+    },
+    {
+      "date": "2026-04-07",
+      "day": 7,
+      "bathroom1_L": 143.69,
+      "bathroom2_L": 102.23,
+      "laundry_L": 100.42,
+      "kitchen_L": 77.79,
+      "garden_L": 29.53,
+      "total_L": 430.1
+    },
+    {
+      "date": "2026-04-08",
+      "day": 8,
+      "bathroom1_L": 142.77,
+      "bathroom2_L": 102.05,
+      "laundry_L": 100.44,
+      "kitchen_L": 79.31,
+      "garden_L": 29.55,
+      "total_L": 425.29
+    },
+    {
+      "date": "2026-04-09",
+      "day": 9,
+      "bathroom1_L": 143.03,
+      "bathroom2_L": 105.44,
+      "laundry_L": 100.53,
+      "kitchen_L": 84.19,
+      "garden_L": 29.6,
+      "total_L": 443.91
+    },
+    {
+      "date": "2026-04-10",
+      "day": 10,
+      "bathroom1_L": 144.07,
+      "bathroom2_L": 109.87,
+      "laundry_L": 100.62,
+      "kitchen_L": 88.88,
+      "garden_L": 29.66,
+      "total_L": 483.04
+    },
+    {
+      "date": "2026-04-11",
+      "day": 11,
+      "bathroom1_L": 145.14,
+      "bathroom2_L": 112.21,
+      "laundry_L": 100.7,
+      "kitchen_L": 89.45,
+      "garden_L": 29.71,
+      "total_L": 513.19
+    },
+    {
+      "date": "2026-04-12",
+      "day": 12,
+      "bathroom1_L": 145.65,
+      "bathroom2_L": 111.02,
+      "laundry_L": 100.77,
+      "kitchen_L": 85.44,
+      "garden_L": 29.76,
+      "total_L": 495.5
+    },
+    {
+      "date": "2026-04-13",
+      "day": 13,
+      "bathroom1_L": 145.47,
+      "bathroom2_L": 107.62,
+      "laundry_L": 100.84,
+      "kitchen_L": 80.73,
+      "garden_L": 29.8,
+      "total_L": 451.92
+    },
+    {
+      "date": "2026-04-14",
+      "day": 14,
+      "bathroom1_L": 144.86,
+      "bathroom2_L": 104.43,
+      "laundry_L": 100.85,
+      "kitchen_L": 79.03,
+      "garden_L": 29.82,
+      "total_L": 428.74
+    },
+    {
+      "date": "2026-04-15",
+      "day": 15,
+      "bathroom1_L": 144.24,
+      "bathroom2_L": 103.46,
+      "laundry_L": 100.88,
+      "kitchen_L": 81.1,
+      "garden_L": 29.84,
+      "total_L": 427.75
+    },
+    {
+      "date": "2026-04-16",
+      "day": 16,
+      "bathroom1_L": 143.93,
+      "bathroom2_L": 105.0,
+      "laundry_L": 100.95,
+      "kitchen_L": 85.23,
+      "garden_L": 29.89,
+      "total_L": 449.64
+    },
+    {
+      "date": "2026-04-17",
+      "day": 17,
+      "bathroom1_L": 144.06,
+      "bathroom2_L": 107.82,
+      "laundry_L": 101.03,
+      "kitchen_L": 88.26,
+      "garden_L": 29.94,
+      "total_L": 488.37
+    },
+    {
+      "date": "2026-04-18",
+      "day": 18,
+      "bathroom1_L": 144.44,
+      "bathroom2_L": 109.89,
+      "laundry_L": 101.11,
+      "kitchen_L": 87.61,
+      "garden_L": 29.99,
+      "total_L": 511.44
+    },
+    {
+      "date": "2026-04-19",
+      "day": 19,
+      "bathroom1_L": 144.79,
+      "bathroom2_L": 109.87,
+      "laundry_L": 101.17,
+      "kitchen_L": 84.03,
+      "garden_L": 30.03,
+      "total_L": 487.84
+    },
+    {
+      "date": "2026-04-20",
+      "day": 20,
+      "bathroom1_L": 144.94,
+      "bathroom2_L": 108.13,
+      "laundry_L": 101.23,
+      "kitchen_L": 80.77,
+      "garden_L": 30.07,
+      "total_L": 447.08
+    },
+    {
+      "date": "2026-04-21",
+      "day": 21,
+      "bathroom1_L": 144.84,
+      "bathroom2_L": 105.91,
+      "laundry_L": 101.24,
+      "kitchen_L": 80.22,
+      "garden_L": 30.08,
+      "total_L": 428.44
+    },
+    {
+      "date": "2026-04-22",
+      "day": 22,
+      "bathroom1_L": 144.62,
+      "bathroom2_L": 104.79,
+      "laundry_L": 101.26,
+      "kitchen_L": 82.47,
+      "garden_L": 30.09,
+      "total_L": 431.5
+    },
+    {
+      "date": "2026-04-23",
+      "day": 23,
+      "bathroom1_L": 144.39,
+      "bathroom2_L": 105.17,
+      "laundry_L": 101.33,
+      "kitchen_L": 85.75,
+      "garden_L": 30.14,
+      "total_L": 455.91
+    },
+    {
+      "date": "2026-04-24",
+      "day": 24,
+      "bathroom1_L": 144.31,
+      "bathroom2_L": 106.76,
+      "laundry_L": 101.39,
+      "kitchen_L": 87.45,
+      "garden_L": 30.16,
+      "total_L": 492.6
+    },
+    {
+      "date": "2026-04-25",
+      "day": 25,
+      "bathroom1_L": 144.38,
+      "bathroom2_L": 108.35,
+      "laundry_L": 101.45,
+      "kitchen_L": 86.16,
+      "garden_L": 30.21,
+      "total_L": 507.48
+    },
+    {
+      "date": "2026-04-26",
+      "day": 26,
+      "bathroom1_L": 144.53,
+      "bathroom2_L": 108.88,
+      "laundry_L": 101.53,
+      "kitchen_L": 83.17,
+      "garden_L": 30.24,
+      "total_L": 479.36
+    },
+    {
+      "date": "2026-04-27",
+      "day": 27,
+      "bathroom1_L": 144.66,
+      "bathroom2_L": 108.11,
+      "laundry_L": 101.6,
+      "kitchen_L": 81.1,
+      "garden_L": 30.27,
+      "total_L": 443.29
+    },
+    {
+      "date": "2026-04-28",
+      "day": 28,
+      "bathroom1_L": 144.68,
+      "bathroom2_L": 106.69,
+      "laundry_L": 101.58,
+      "kitchen_L": 81.25,
+      "garden_L": 30.28,
+      "total_L": 429.47
+    },
+    {
+      "date": "2026-04-29",
+      "day": 29,
+      "bathroom1_L": 144.62,
+      "bathroom2_L": 105.7,
+      "laundry_L": 101.6,
+      "kitchen_L": 83.41,
+      "garden_L": 30.28,
+      "total_L": 435.61
+    },
+    {
+      "date": "2026-04-30",
+      "day": 30,
+      "bathroom1_L": 144.5,
+      "bathroom2_L": 105.54,
+      "laundry_L": 101.66,
+      "kitchen_L": 85.86,
+      "garden_L": 30.33,
+      "total_L": 461.6
+    }
+  ],
+  "summary": {
+    "next_7_total_L": 3241.41,
+    "next_30_total_L": 13860.38,
+    "avg_daily_L": 462.01
+  }
+}
