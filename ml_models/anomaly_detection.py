@@ -12,7 +12,7 @@ DATA_PATH = os.path.join(BASE_DIR, "data", "water_data_hourly.csv")
 MODELS_DIR = os.path.join(BASE_DIR, "..", "Backend", "data")
 os.makedirs(MODELS_DIR, exist_ok=True)
 
-# The regenerated dataset contains roughly 4% anomalous rows, so matching the
+# The regenerated dataset contains roughly 0.4% anomalous rows, so matching the
 # contamination rate to that scale gives the unsupervised detector a better
 # recall/precision tradeoff.
 CONTAMINATION = 0.004
@@ -104,8 +104,8 @@ def show_detected_anomalies(df):
 def identify_sensor(row):
     sensor_vals = {
         "Master Bathroom": row["bathroom1_L"],
-        "Common Bathroom":  row["bathroom2_L"],
-        "Laundry": row["laundry_L"],
+        "Common Bathroom": row["bathroom2_L"],
+        "Laundry":         row["laundry_L"],
         "Kitchen":         row["kitchen_L"],
         "Garden":          row["garden_L"]
     }
