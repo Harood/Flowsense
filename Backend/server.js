@@ -33,7 +33,17 @@ app.get("/health", (req, res) => {
 });
 
 // Start server
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
   console.log(`FlowSense backend running on port ${PORT}`);
   console.log(`Allowed CORS origins: ${allowedOrigins.join(", ")}`);
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('Unhandled Rejection:', reason);
+  process.exit(1);
+});
+
+process.on('uncaughtException', (error) => {
+  console.error('Uncaught Exception:', error);
+  process.exit(1);
 });
