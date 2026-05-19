@@ -10,7 +10,7 @@
     "bathroom2_L": 0.31,
     "laundry_L": 0.3,
     "kitchen_L": 0.2,
-    "garden_L": 0.0,
+    "garden_L": 0,
     "anomaly_score": -0.7014121079455945,
     "severity": "HIGH",
     "status": "active"
@@ -42,7 +42,7 @@
     "bathroom2_L": 0.34,
     "laundry_L": 45.31,
     "kitchen_L": 0.25,
-    "garden_L": 0.0,
+    "garden_L": 0,
     "anomaly_score": -0.6772153927182998,
     "severity": "HIGH",
     "status": "active"
@@ -74,7 +74,7 @@
     "bathroom2_L": 0.32,
     "laundry_L": 90.24,
     "kitchen_L": 0.24,
-    "garden_L": 0.0,
+    "garden_L": 0,
     "anomaly_score": -0.6969209551331902,
     "severity": "HIGH",
     "status": "resolved"
@@ -90,10 +90,10 @@
     "bathroom2_L": 110.26,
     "laundry_L": 0.25,
     "kitchen_L": 0.25,
-    "garden_L": 0.0,
+    "garden_L": 0,
     "anomaly_score": -0.6768259772210977,
     "severity": "HIGH",
-    "status": "active"
+    "status": "resolved"
   },
   {
     "datetime": "2026-03-13 02:00:00",
@@ -106,10 +106,10 @@
     "bathroom2_L": 0.28,
     "laundry_L": 0.29,
     "kitchen_L": 0.22,
-    "garden_L": 60.0,
+    "garden_L": 60,
     "anomaly_score": -0.6974677922718638,
     "severity": "MEDIUM",
-    "status": "active"  
+    "status": "resolved"
   },
   {
     "datetime": "2026-03-22 01:00:00",
@@ -122,7 +122,7 @@
     "bathroom2_L": 28.4,
     "laundry_L": 0.31,
     "kitchen_L": 0.25,
-    "garden_L": 0.0,
+    "garden_L": 0,
     "anomaly_score": -0.647234908858219,
     "severity": "MEDIUM",
     "status": "resolved"
@@ -138,7 +138,7 @@
     "bathroom2_L": 0.35,
     "laundry_L": 0.34,
     "kitchen_L": 0.28,
-    "garden_L": 0.0,
+    "garden_L": 0,
     "anomaly_score": -0.6694019647768241,
     "severity": "MEDIUM",
     "status": "resolved"
