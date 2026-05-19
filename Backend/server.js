@@ -15,8 +15,10 @@ const PORT = process.env.PORT || 5000;
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:3000",
-  process.env.FRONTEND_URL || "https://flowsense-seven.vercel.app",
-];
+  "https://flowsense-seven.vercel.app",
+  "https://flowsense-haroods-projects.vercel.app",
+  process.env.FRONTEND_URL,
+].filter(Boolean);
 
 app.use(cors({ origin: allowedOrigins, credentials: true }));
 app.use(express.json());
