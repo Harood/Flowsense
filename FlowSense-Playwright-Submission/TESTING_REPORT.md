@@ -26,7 +26,7 @@ The project satisfies the required testing activities:
 4. **Additional notification tests:** Opening the notification panel and handling an empty alert response.
 5. **Cross-browser execution:** Chromium and Firefox completed successfully; WebKit was attempted and documented as a Windows launch limitation.
 6. **Intentional bug demonstration:** A temporary Dashboard heading regression was injected, detected by Playwright, logged, and restored.
-7. **Submission artifacts:** Test modules, screenshots, HTML reports, failure evidence, CI workflow, and a Windows execution script.
+7. **Submission artifacts:** Test modules, screenshots, HTML reports, failure evidence, and a Windows execution script.
 
 The standard test suite contains **20 tests**. The intentional regression is a separate marked test and is excluded from the normal green run.
 
@@ -94,7 +94,6 @@ FlowSense/
 |-- pytest.ini
 |-- requirements-playwright.txt
 |-- run_all_browsers.ps1
-|-- .github/workflows/python-playwright.yml
 |-- tests_python/
 |   |-- conftest.py
 |   |-- test_dashboard.py
@@ -212,13 +211,7 @@ The final clean execution command was:
 
 The HTML report is available at `artifacts/python-report-all-browsers.html`. WebKit's Windows launch limitation is recorded in `artifacts/webkit-launch-note.txt`; it occurred before application tests were reached and is not an application assertion failure.
 
-## 9. Continuous Integration
-
-The workflow at `.github/workflows/python-playwright.yml` runs the standard suite on pushes and pull requests using a browser matrix for Chromium, Firefox, and WebKit. It installs Node.js, Python dependencies, Playwright browsers, starts both application services, runs pytest, and uploads reports and screenshots as CI artifacts.
-
-The intentional bug test is kept separate from the standard CI gate because its expected failure is demonstration evidence rather than a product acceptance test.
-
-## 10. Team Member Contribution Breakdown
+## 9. Team Member Contribution Breakdown
 
 | Team Member | Responsibilities |
 |---|---|
@@ -228,7 +221,7 @@ The intentional bug test is kept separate from the standard CI gate because its 
 
 Both members should be able to explain each fixture, locator, API assertion, mock route, browser result, and expected outcome during the final demonstration.
 
-## 11. Conclusion
+## 10. Conclusion
 
 The FlowSense testing project provides a structured, maintainable Python Playwright suite for the application's principal workflows. It validates 20 standard scenarios, detects an intentional regression, verifies backend contracts, exercises frontend network resilience, produces visual evidence, and supports repeatable local and CI execution.
 
