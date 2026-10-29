@@ -1,0 +1,428 @@
+\documentclass[11pt,a4paper]{article}
+
+% Typography and encoding
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+
+% Page layout and color
+\usepackage[a4paper,top=0.85in,bottom=0.85in,left=0.75in,right=0.75in]{geometry}
+\usepackage[table,xcdraw]{xcolor}
+\definecolor{primaryblue}{RGB}{24,76,120}
+\definecolor{secondaryblue}{RGB}{41,128,185}
+\definecolor{darkgray}{RGB}{45,52,54}
+\definecolor{lightgray}{RGB}{245,247,250}
+\definecolor{bordergray}{RGB}{220,224,230}
+\definecolor{passgreen}{RGB}{39,174,96}
+\definecolor{failred}{RGB}{192,57,43}
+
+% Figures, tables, lists, and code
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelfont=bf,textfont=it,skip=6pt}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{listings}
+\lstset{
+    basicstyle=\ttfamily\scriptsize,
+    backgroundcolor=\color{lightgray},
+    frame=single,
+    rulecolor=\color{bordergray},
+    breaklines=true,
+    breakatwhitespace=true,
+    showstringspaces=false,
+    keywordstyle=\color{primaryblue}\bfseries,
+    commentstyle=\color{gray}\itshape,
+    stringstyle=\color{passgreen},
+    tabsize=2
+}
+
+% Header and hyperlinks
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{darkgray}\textbf{FlowSense} --- Software Testing Final Project Report}
+\fancyhead[R]{\small\color{darkgray}Complex Engineering Activity}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primaryblue,
+    urlcolor=secondaryblue,
+    filecolor=primaryblue
+}
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries\color{primaryblue}}{\thesection}{1em}{}[\titlerule]
+\titleformat{\subsection}{\large\bfseries\color{secondaryblue}}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\color{darkgray}}{\thesubsubsection}{1em}{}
+
+\graphicspath{{artifacts/screenshots/}}
+\newcommand{\safeimage}[2]{%
+    \IfFileExists{#1}{\includegraphics[width=#2]{#1}}{\fcolorbox{bordergray}{lightgray}{\parbox[c][1.1in][c]{#2}{\centering Screenshot unavailable}}}%
+}
+
+\begin{document}
+
+% ------------------------------------------------------------------------------
+% TITLE AND METADATA
+% ------------------------------------------------------------------------------
+\begin{center}
+    {\LARGE\bfseries\color{primaryblue} FlowSense -- Software Testing Final Project Report}\\[6pt]
+    {\large\bfseries Complex Engineering Activity: Automated Testing with Playwright \& Python}\\[12pt]
+    \rule{\linewidth}{1pt}
+\end{center}
+
+\vspace{-4pt}
+\noindent
+\begin{tabularx}{\linewidth}{@{}lX lX@{}}
+    \textbf{Course:} & Software Testing Strategies & \textbf{Testing Tool:} & Playwright for Python (\texttt{pytest-playwright}) \\
+    \textbf{Project:} & FlowSense Water Dashboard & \textbf{Test Engines:} & Chromium, Firefox, WebKit \\
+    \textbf{Team:} & Haris Masood (SE-23088) & \textbf{Execution Mode:} & Headless and headed interactive \\
+    \textbf{Team Member:} & M. Huzaifa Hassan (SE-23089) & \textbf{Final Status:} & 36 standard executions passed \\
+    \textbf{Date:} & 30 October 2026 & \textbf{Bug Evidence:} & 1 intentional regression caught \\
+\end{tabularx}
+
+\vspace{10pt}
+\hrule
+\vspace{14pt}
+
+% ------------------------------------------------------------------------------
+% SECTION 1
+% ------------------------------------------------------------------------------
+\section{Executive Summary}
+
+FlowSense is a web-based water management dashboard that presents sensor usage, anomaly alerts, historical insights, and machine-learning forecasts. The system combines a React/Vite frontend with an Express backend API.
+
+A modular automated testing suite was implemented with \textbf{Playwright for Python} and \textbf{pytest}. The suite validates the most important user workflows, backend response contracts, frontend behavior during network failures, cross-browser execution, and regression detection.
+
+The project satisfies the required testing activities:
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Four core features and 12 E2E tests:} Dashboard Monitoring, Alerts Monitoring, Insights Analytics, and Forecasting.
+    \item \textbf{Four API tests:} GET, POST, PUT, and DELETE behavior with status and response assertions.
+    \item \textbf{Two network-mocking tests:} Empty data and HTTP 500 failure scenarios.
+    \item \textbf{Notification coverage:} Opening the notification panel and handling an empty alert response.
+    \item \textbf{Cross-browser execution:} Chromium and Firefox completed successfully; WebKit was attempted and documented as a Windows launch limitation.
+    \item \textbf{Intentional bug demonstration:} A temporary Dashboard heading regression was injected, detected, logged, and restored.
+    \item \textbf{Submission evidence:} Test modules, screenshots, HTML reports, failure logs, CI workflow, and a Windows execution script.
+\end{enumerate}
+
+The standard suite contains \textbf{20 tests}. The intentional regression is a separate marked test and is excluded from the normal green run.
+
+% ------------------------------------------------------------------------------
+% SECTION 2
+% ------------------------------------------------------------------------------
+\section{System Under Test (SUT) \& Scope Analysis}
+
+FlowSense supports the following operational workflows:
+
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Dashboard workflow:} Users view current water consumption, sensor totals, active sensors, and estimated billing data.
+    \item \textbf{Alerts workflow:} Users review detected anomalies and filter records by active or resolved status.
+    \item \textbf{Insights workflow:} Users inspect historical usage KPIs and navigate between supported months.
+    \item \textbf{Forecast workflow:} Users inspect seven-day and thirty-day water usage predictions.
+    \item \textbf{Notifications workflow:} Users open the notification panel to review active alerts.
+    \item \textbf{API workflow:} The frontend retrieves dashboard, alert, forecast, and recommendation data through the Express API.
+\end{itemize}
+
+\subsection{Features In-Scope vs. Features Left Out}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\linewidth}{@{}p{3.5cm} c X@{}}
+\toprule
+\textbf{Feature / Subsystem} & \textbf{Status} & \textbf{Technical Rationale} \\
+\midrule
+\rowcolor{lightgray}
+\textbf{Dashboard Monitoring} & \textbf{IN-SCOPE} & Core view for usage totals, sensor health, and consumption summaries. \\
+\textbf{Alerts Monitoring} & \textbf{IN-SCOPE} & Critical anomaly workflow with active and resolved filtering. \\
+\rowcolor{lightgray}
+\textbf{Insights Analytics} & \textbf{IN-SCOPE} & Verifies historical KPIs and month navigation. \\
+\textbf{Water Usage Forecasting} & \textbf{IN-SCOPE} & Verifies seven-day and thirty-day prediction views. \\
+\rowcolor{lightgray}
+\textbf{Notification Panel} & \textbf{IN-SCOPE} & Confirms active alerts can be surfaced to the user. \\
+\textbf{REST API} & \textbf{IN-SCOPE} & Validates status codes and JSON response structure. \\
+\rowcolor{lightgray}
+\textbf{Network Failure Handling} & \textbf{IN-SCOPE} & Simulates empty responses and server errors through route interception. \\
+\midrule
+\textit{Authentication} & \textit{OUT-OF-SCOPE} & No authentication workflow is implemented in this version. \\
+\rowcolor{lightgray}
+\textit{Payments and Integrations} & \textit{OUT-OF-SCOPE} & No corresponding UI or backend endpoints exist. \\
+\textit{Live Sensor Hardware} & \textit{OUT-OF-SCOPE} & Hardware is unavailable in the local test environment. \\
+\rowcolor{lightgray}
+\textit{ML Model Retraining} & \textit{OUT-OF-SCOPE} & Model training is not a deterministic browser workflow. \\
+\bottomrule
+\end{tabularx}
+\caption{FlowSense system scope and test-selection rationale}
+\end{table}
+
+\newpage
+
+% ------------------------------------------------------------------------------
+% SECTION 3
+% ------------------------------------------------------------------------------
+\section{Comprehensive Test Case Matrix}
+
+The suite contains 20 standard automated tests and one separately marked intentional regression:
+
+\begin{table}[H]
+\centering
+\scriptsize
+\begin{tabularx}{\linewidth}{@{}l l X l l@{}}
+\toprule
+\textbf{ID} & \textbf{Module} & \textbf{Test Objective} & \textbf{Type} & \textbf{Outcome} \\
+\midrule
+\rowcolor{lightgray}
+TC-01 & \texttt{test\_dashboard.py} & Load usage totals and sensor overview & Positive E2E & \textcolor{passgreen}{\textbf{PASS}} \\
+TC-02 & \texttt{test\_dashboard.py} & Handle an unsupported query value & Negative E2E & \textcolor{passgreen}{\textbf{PASS}} \\
+TC-03 & \texttt{test\_dashboard.py} & Render safely with empty dashboard JSON & Negative E2E & \textcolor{passgreen}{\textbf{PASS}} \\
+TC-04 & \texttt{test\_alerts.py} & Load alert summary and All filter & Positive E2E & \textcolor{passgreen}{\textbf{PASS}} \\
+\rowcolor{lightgray}
+TC-05 & \texttt{test\_alerts.py} & Switch between Active and Resolved filters & Positive E2E & \textcolor{passgreen}{\textbf{PASS}} \\
+TC-06 & \texttt{test\_alerts.py} & Display an empty-alert state & Negative E2E & \textcolor{passgreen}{\textbf{PASS}} \\
+TC-07 & \texttt{test\_insights.py} & Load KPI cards and Usage Trends & Positive E2E & \textcolor{passgreen}{\textbf{PASS}} \\
+\rowcolor{lightgray}
+TC-08 & \texttt{test\_insights.py} & Navigate from January to February 2026 & Positive E2E & \textcolor{passgreen}{\textbf{PASS}} \\
+TC-09 & \texttt{test\_insights.py} & Disable navigation before the first month & Negative E2E & \textcolor{passgreen}{\textbf{PASS}} \\
+TC-10 & \texttt{test\_forecast.py} & Load seven-day and thirty-day summaries & Positive E2E & \textcolor{passgreen}{\textbf{PASS}} \\
+\rowcolor{lightgray}
+TC-11 & \texttt{test\_forecast.py} & Switch to the thirty-day tab & Positive E2E & \textcolor{passgreen}{\textbf{PASS}} \\
+TC-12 & \texttt{test\_forecast.py} & Render an error state after HTTP 500 & Negative E2E & \textcolor{passgreen}{\textbf{PASS}} \\
+TC-13 & \texttt{test\_notifications.py} & Open the notification panel & Positive E2E & \textcolor{passgreen}{\textbf{PASS}} \\
+\rowcolor{lightgray}
+TC-14 & \texttt{test\_notifications.py} & Handle an empty notification list & Negative E2E & \textcolor{passgreen}{\textbf{PASS}} \\
+TC-15 & \texttt{test\_api\_crud.py} & GET dashboard; require HTTP 200 and JSON fields & Positive API & \textcolor{passgreen}{\textbf{PASS}} \\
+TC-16 & \texttt{test\_api\_crud.py} & POST read-only dashboard endpoint & Negative API & \textcolor{passgreen}{\textbf{PASS}} \\
+\rowcolor{lightgray}
+TC-17 & \texttt{test\_api\_crud.py} & PUT alert status and restore original data & Positive API & \textcolor{passgreen}{\textbf{PASS}} \\
+TC-18 & \texttt{test\_api\_crud.py} & DELETE read-only dashboard endpoint & Negative API & \textcolor{passgreen}{\textbf{PASS}} \\
+TC-19 & \texttt{test\_network\_mocking.py} & Mock empty dashboard response & Negative Mock & \textcolor{passgreen}{\textbf{PASS}} \\
+\rowcolor{lightgray}
+TC-20 & \texttt{test\_network\_mocking.py} & Mock HTTP 500 alerts response & Negative Mock & \textcolor{passgreen}{\textbf{PASS}} \\
+TC-21 & \texttt{test\_intentional\_bug.py} & Detect temporary Dashboard heading regression & Intentional Bug & \textcolor{failred}{\textbf{FAIL*}} \\
+\bottomrule
+\end{tabularx}
+\caption{Complete FlowSense automated test matrix}
+\end{table}
+
+\noindent\textit{*TC-21 is intentionally expected to fail during the regression demonstration and is excluded from the standard green run.}
+
+% ------------------------------------------------------------------------------
+% SECTION 4
+% ------------------------------------------------------------------------------
+\section{Test Suite Implementation \& Architecture}
+
+The automated testing framework is structured modularly under \texttt{FlowSense-Playwright-Submission/}:
+
+\begin{lstlisting}
+FlowSense-Playwright-Submission/
+|-- pytest.ini                         # paths, markers, default bug exclusion
+|-- requirements-playwright.txt        # Python testing dependencies
+|-- run_all_browsers.ps1               # Windows execution helper
+|-- python-playwright.yml              # GitHub Actions browser matrix
+|-- tests_python/
+|   |-- conftest.py                    # services, API context, screenshots
+|   |-- test_dashboard.py              # Feature 1: three tests
+|   |-- test_alerts.py                 # Feature 2: three tests
+|   |-- test_insights.py               # Feature 3: three tests
+|   |-- test_forecast.py               # Feature 4: three tests
+|   |-- test_notifications.py          # notification tests
+|   |-- test_api_crud.py               # four API tests
+|   |-- test_network_mocking.py        # two route mocks
+|   `-- test_intentional_bug.py        # marked regression test
+`-- artifacts/
+    |-- python-report-all-browsers.html
+    |-- python-report-chromium.html
+    `-- screenshots/
+\end{lstlisting}
+
+\subsection{Shared Fixtures and Test Lifecycle}
+
+The shared \texttt{conftest.py} fixture starts the Express backend and Vite frontend when they are not already running. It waits for the backend health endpoint and frontend URL, creates and disposes a Playwright \texttt{APIRequestContext}, provides configurable frontend and backend base URLs, and saves browser-specific screenshots.
+
+The suite can run locally in VS Code or against another environment by setting \texttt{FLOWSENSE\_BASE\_URL} and \texttt{FLOWSENSE\_API\_URL}.
+
+\subsection{Automated Screenshot Evidence}
+
+Positive feature tests capture full-page screenshots for Dashboard, Alerts, Insights, and Forecast. The intentional regression captures a dedicated failure screenshot immediately before the failing assertion for deterministic Windows evidence. The resulting images are stored under \texttt{artifacts/screenshots/}.
+
+% ------------------------------------------------------------------------------
+% SECTION 5
+% ------------------------------------------------------------------------------
+\section{Visual Evidence of Tested Features}
+
+The following figures use the screenshots generated by the verified Chromium and Firefox runs.
+
+\subsection{Feature 1: Dashboard Monitoring}
+The Dashboard test verifies current usage totals, sensor status, and the sensor overview section.
+
+\begin{figure}[H]
+    \centering
+    \safeimage{dashboard-loaded-chromium.png}{0.8\linewidth}
+        \caption{FlowSense Dashboard with usage totals and sensor overview}
+\end{figure}
+
+\subsection{Feature 2: Alerts Monitoring}
+The Alerts tests verify the alert summary, active/resolved filters, and the empty-alert state.
+
+\begin{figure}[H]
+    \centering
+    \safeimage{alerts-loaded-chromium.png}{0.8\linewidth}
+    \caption{FlowSense Alerts page with anomaly summary and filters}
+\end{figure}
+
+\newpage
+
+\subsection{Feature 3: Insights Analytics}
+The Insights tests verify KPI rendering, usage trends, and month navigation boundaries.
+
+\begin{figure}[H]
+    \centering
+    \safeimage{insights-loaded-chromium.png}{0.8\linewidth}
+    \caption{FlowSense Insights and Analytics page}
+\end{figure}
+
+\subsection{Feature 4: Forecasting}
+The Forecast tests verify summary cards, the thirty-day tab, and the server-error state.
+
+\begin{figure}[H]
+    \centering
+        \safeimage{forecast-loaded-chromium.png}{0.8\linewidth}
+    \caption{FlowSense Water Usage Forecast page}
+\end{figure}
+
+% ------------------------------------------------------------------------------
+% SECTION 6
+% ------------------------------------------------------------------------------
+\section{API Testing \& Network Mocking}
+
+\subsection{REST API CRUD Operations}
+
+Direct HTTP calls were executed through Playwright's \texttt{APIRequestContext} fixture:
+
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Read (GET \texttt{/api/dashboard}):} Validates HTTP 200 and confirms that the response contains the \texttt{sensor\_cards} and \texttt{chart\_last30} arrays.
+    \item \textbf{Create (POST \texttt{/api/dashboard}):} Confirms that the read-only dashboard resource rejects unsupported creation with HTTP 404.
+    \item \textbf{Update (PUT \texttt{/api/alerts/status}):} Changes an alert status, verifies HTTP 200, and restores the original status after the assertion.
+    \item \textbf{Delete (DELETE \texttt{/api/dashboard}):} Confirms that the read-only dashboard resource rejects unsupported deletion with HTTP 404.
+\end{itemize}
+
+\subsection{Network Mocking Tests}
+
+The frontend request layer is intercepted with Playwright's \texttt{page.route()} API:
+
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Empty response:} The dashboard endpoint returns an empty JSON object and the dashboard shell remains visible.
+    \item \textbf{HTTP 500 response:} The alerts endpoint returns a simulated server error and the frontend displays \texttt{Failed to fetch alerts} without crashing.
+\end{itemize}
+
+% ------------------------------------------------------------------------------
+% SECTION 7
+% ------------------------------------------------------------------------------
+\section{Intentional Bug Demonstration \& Failure Detection}
+
+To prove that the automated suite detects regressions, the Dashboard heading was temporarily changed from \texttt{Dashboard} to \texttt{Dashboard (Bug)}. The regression test continued to expect the correct product heading.
+
+Playwright failed with a locator assertion because the expected heading was not visible. The failure output was saved to \texttt{artifacts/intentional-bug-failure.txt}, and the full-page screenshot was saved to \texttt{artifacts/screenshots/FAIL\_test\_intentional\_bug\_dashboard\_heading-chromium.png}.
+
+\begin{figure}[H]
+    \centering
+    \safeimage{FAIL_test_intentional_bug_dashboard_heading-chromium.png}{0.8\linewidth}
+        \caption{Screenshot evidence captured during the intentional Dashboard regression}
+\end{figure}
+
+After evidence was captured, the heading was restored and the standard suite was rerun successfully.
+
+Command used for the demonstration:
+
+\begin{lstlisting}[language=bash]
+.\.venv\Scripts\python.exe -m pytest tests_python/test_intentional_bug.py -q \
+  --override-ini addopts="" -m bug --browser chromium
+\end{lstlisting}
+
+% ------------------------------------------------------------------------------
+% SECTION 8
+% ------------------------------------------------------------------------------
+\section{Cross-Browser Execution Results \& HTML Report}
+
+The final clean execution command was:
+
+\begin{lstlisting}[language=bash]
+.\.venv\Scripts\python.exe -m pytest tests_python -q \
+  --browser chromium --browser firefox \
+  --html=artifacts/python-report-all-browsers.html \
+  --self-contained-html
+\end{lstlisting}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+\textbf{Execution} & \textbf{Verified result} \\
+\midrule
+\rowcolor{lightgray}
+Chromium UI tests & \textcolor{passgreen}{\textbf{16 passed}} \\
+Firefox UI tests & \textcolor{passgreen}{\textbf{16 passed}} \\
+\rowcolor{lightgray}
+API tests & \textcolor{passgreen}{\textbf{4 passed}} \\
+Standard total & \textcolor{passgreen}{\textbf{36 passed}} \\
+\rowcolor{lightgray}
+Intentional bug test & \textcolor{failred}{\textbf{1 expected failure}} \\
+WebKit & Attempted; executable exited during startup on Windows \\
+\bottomrule
+\end{tabularx}
+\caption{Verified cross-browser execution results}
+\end{table}
+
+The self-contained HTML report is available at \texttt{artifacts/python-report-all-browsers.html}. WebKit's Windows launch limitation is recorded in \texttt{artifacts/webkit-launch-note.txt}; it occurred before application tests were reached and is not an application assertion failure.
+
+% ------------------------------------------------------------------------------
+% SECTION 9
+% ------------------------------------------------------------------------------
+\section{Continuous Integration}
+
+The workflow at \texttt{.github/workflows/python-playwright.yml} runs the standard suite on pushes and pull requests using a browser matrix for Chromium, Firefox, and WebKit. It installs Node.js, Python dependencies, Playwright browsers, starts both application services, runs pytest, and uploads reports and screenshots as CI artifacts.
+
+The intentional bug test remains separate from the standard CI gate because its expected failure is demonstration evidence rather than a product acceptance test.
+
+% ------------------------------------------------------------------------------
+% SECTION 10
+% ------------------------------------------------------------------------------
+\section{Team Member Contribution Breakdown}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\linewidth}{@{}p{4cm} X@{}}
+\toprule
+\textbf{Team Member} & \textbf{Assigned Responsibilities} \\
+\midrule
+\rowcolor{lightgray}
+\textbf{Haris Masood (SE-23088)} & Dashboard and Alerts E2E modules, API contract review, test data verification, and backend behavior analysis. \\
+\textbf{M. Huzaifa Hassan (SE-23089)} & Insights and Forecast E2E modules, network mocking, screenshot evidence, and report packaging. \\
+\rowcolor{lightgray}
+\textbf{Both members} & Reviewed every test, executed browser runs, discussed expected results, and prepared the intentional bug demonstration. \\
+\bottomrule
+\end{tabularx}
+\caption{Pair testing responsibilities}
+\end{table}
+
+Both members should be able to explain each fixture, locator, API assertion, mock route, browser result, and expected outcome during the final demonstration.
+
+% ------------------------------------------------------------------------------
+% SECTION 11
+% ------------------------------------------------------------------------------
+\section{Conclusion}
+
+The FlowSense testing project provides a structured and maintainable Python Playwright suite for the application's principal workflows. It validates 20 standard scenarios, detects an intentional regression, verifies backend contracts, exercises frontend network resilience, produces visual evidence, and supports repeatable local and CI execution.
+
+The final verified Chromium and Firefox run completed with \textbf{36 passing standard executions}. WebKit was attempted and its host-specific startup limitation was documented transparently. The application source was restored to its correct state after the intentional bug demonstration.
+
+\end{document}

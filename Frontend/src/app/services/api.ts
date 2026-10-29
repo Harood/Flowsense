@@ -1,4 +1,26 @@
-const API_URL = `${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api`;
+const configuredApiUrl = import.meta.env.VITE_API_URL?.trim();
+
+const getApiBaseUrl = () => {
+  if (configuredApiUrl) {
+    if (configuredApiUrl === '/api') {
+      return '';
+    }
+
+    return configuredApiUrl.replace(/\/$/, '').replace(/\/api$/, '');
+  }
+
+  if (import.meta.env.DEV) {
+    return 'http://localhost:5000';
+  }
+
+  if (typeof window !== 'undefined') {
+    return window.location.origin;
+  }
+
+  return 'http://localhost:5000';
+};
+
+const API_URL = `${getApiBaseUrl() || ''}/api`;
 
 export const fetchDashboard = async () => {
   try {

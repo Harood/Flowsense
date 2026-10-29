@@ -1,0 +1,4 @@
+WebKit execution was attempted with:
+.\.venv\Scripts\python.exe -m pytest tests_python -q --browser webkit
+
+The Playwright WebKit executable exited during browser startup on this Windows environment with TargetClosedError / exit code 3236495362. Tests were not reached, so this is an environment limitation rather than an application assertion failure. Chromium and Firefox completed successfully.
