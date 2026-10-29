@@ -39,45 +39,8 @@ jobs:
       - name: Install Playwright browser
         run: python -m playwright install --with-deps ${{ matrix.browser }}
 
-      - name: Start services and run tests
-        env:
-          FLOWSENSE_BASE_URL: http://127.0.0.1:5173
-          FLOWSENSE_API_URL: http://127.0.0.1:5000
-          VITE_API_URL: http://127.0.0.1:5000
-        run: |
-          set -e
-          npm --prefix Backend start > backend.log 2>&1 &
-          backend_pid=$!
-          npm --prefix Frontend run dev -- --host 127.0.0.1 > frontend.log 2>&1 &
-          frontend_pid=$!
-
-          cleanup() {
-            kill "$backend_pid" "$frontend_pid" 2>/dev/null || true
-          }
-          trap cleanup EXIT
-
-          wait_for_service() {
-            url=$1
-            name=$2
-            for attempt in {1..30}; do
-              if curl --fail --silent "$url" > /dev/null; then
-                return 0
-              fi
-              if ! kill -0 "$3" 2>/dev/null; then
-                echo "$name stopped before becoming ready"
-                cat "${name}.log"
-                return 1
-              fi
-              sleep 2
-            done
-            echo "$name did not become ready: $url"
-            cat "${name}.log"
-            return 1
-          }
-
-          wait_for_service http://127.0.0.1:5000/health backend "$backend_pid"
-          wait_for_service http://127.0.0.1:5173 frontend "$frontend_pid"
-          python -m pytest tests_python -q --browser "${{ matrix.browser }}" --html="artifacts/python-report-${{ matrix.browser }}.html" --self-contained-html
+      - name: Run tests
+        run: python -m pytest tests_python -q --browser ${{ matrix.browser }} --html=artifacts/python-report-${{ matrix.browser }}.html --self-contained-html
 
       - name: Upload reports and screenshots
         if: always()
